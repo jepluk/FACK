@@ -1,0 +1,2 @@
+# FACK
+Facebook cookies generator
