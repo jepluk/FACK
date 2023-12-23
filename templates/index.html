@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FACK | Facebook Cookies Generator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+        <style type="text/css">
+            *{
+                margin: 0;;
+                padding: 0;
+            }
+        </style> 
+    </head>
+    <body style="font-family: 'Montserrat', sans-serif;" class="bg-gray-200">
+        <div class="bg-gray-900 p-[10px] flex justify-between items-center">
+            <button type="submit" id="stats" class="rounded bg-gray-50 w-[50px] flex items-center justify-center py-[5px]">
+                <i class="ph ph-chart-bar-horizontal text-[20px]"></i>
+            </button>
+            <b class="text-gray-50">FACK-ID</b>
+        </div>
+        <div class="p-[10px]">
+            <!-- responsive container -->
+            <div class="block md:flex md:gap-[10px]">
+                <!-- login container -->
+                <div class="rounded bg-white w-full md:w-[500px] p-[10px] md:p-[30px]">
+                    <h2 class="">Masuk ke facebook</h2>
+                    <hr />
+                    <div class="flex items-center mt-[20px]">
+                        <i class="ph ph-at px-[15px] bg-rose-500 py-[10.2px] rounded-l text-white"></i>
+                        <input type="text" id="email-value" value="" class="rounded-r outline-none border-2 border-rose-500 p-[6px] text-[14px] w-full" placeholder="email/no/username/uid">
+                    </div>
+                    <div class="flex items-center mt-[5px]">
+                        <i class="ph ph-lock-key px-[15px] bg-gray-500 py-[10.2px] rounded-l text-white"></i>
+                        <input type="text" id="pass-value" value="" class="rounded-r outline-none border-2 border-gray-500 p-[6px] text-[14px] w-full" placeholder="password">
+                    </div>
+                    <a href="#" class="text-blue-700 text-[13px] flex justify-end mt-[7px]">Turtorial?</a>
+                    <button type="submit" id="convert" class="rounded bg-rose-500 w-full py-[7px] text-white mt-[20px]">CONVERT</button>
+                    <p class="mt-[10px] text-[11px] flex justify-center">©2023-2024 Nyett | FACK-ID v1</p>
+                </div>
+                <!-- result & other container -->
+                <div class="block">
+                    <!-- result container -->
+                    <div class="bg-white rounded w-full md:w-[400px] p-[10px] md:p-[30px] mt-[5px] md:mt-[0px]">
+                        <h2>Result</h2>
+                        <hr />
+                        <div class="mt-[20px]" id="cookies">
+                            <center><img src="https://i.gifer.com/o6m.gif" alt="loading.." id="load" width="100px" height="100px"></center>
+                            <textarea id="cookies-value" class="border text-[13px] border-gray-500 bg-gray-100 rounded outline-none w-full p-[5px] h-[80px]"></textarea>
+                            <div class="flex justify-end">
+                                <button type="submit" class="flex rounded justify-center items-center bg-blue-500 w-[30%] gap-[5px] py-[5px]" id="copy">
+                                    <i class="ph ph-clipboard-text text-white"></i>
+                                    <b class="text-white">Copy</b>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- medsos container -->
+                    <div class="flex justify-center items-center">
+                        <a href="https://github.com/jepluk"><button type="submit" id="github" class="p-[20px]"><i class="ph ph-github-logo text-[30px]"></i></button></a>
+                        <a href="https://www.facebook.com/profile.php?id=100086655141072"><button type="submit" id="facebook" class="p-[20px]"><i class="ph ph-facebook-logo text-[30px]"></i></button></a>
+                        <a href="https://www.instagram.com/ipanjrg_772?igsh=ZGNjOWZkYTE3MQ=="><button type="submit" id="instagram" class="p-[20px]"><i class="ph ph-instagram-logo text-[30px]"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="{{url_for('static', filename='script.js') }}"></script>
+    </body>
+          </html>
